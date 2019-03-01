@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.sunnygroup.backoffice.tdcapp">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" /> <!-- To auto-complete the email text field in the login form with the user's emails -->
+    <uses-permission android:name="android.permission.GET_ACCOUNTS" />
+    <uses-permission android:name="android.permission.READ_PROFILE" />
+    <uses-permission android:name="android.permission.READ_CONTACTS" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <receiver android:name=".services.NetworkChangeReceiver" android:exported="true">
+            <intent-filter>
+                <action android:name="android.net.conn.CONNECTIVITY_CHANGE"/>
+                <action android:name="android.net.wifi.WIFI_STATE_CHANGED"/>
+            </intent-filter>
+        </receiver>
+        <activity
+            android:name=".LoginActivity"
+            android:label="@string/app_name"
+            android:theme="@style/Theme.AppCompat.NoActionBar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".MainActivity"
+            android:label="@string/title_activity_main"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".AppDrawerActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.AppCompat.NoActionBar"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name=".MachineMovementActivity"
+            android:label="@string/machine_movement"
+            android:theme="@style/Theme.AppCompat.NoActionBar" />
+        <activity
+            android:name=".PartMovementActivity"
+            android:label="@string/part_movement"
+            android:theme="@style/Theme.AppCompat.NoActionBar" />
+        <activity android:name=".BoardConversionActivity" />
+        <activity android:name=".SettingsActivity" />
+        <activity
+            android:name=".BVActivity"
+            android:label="@string/bv"
+            android:theme="@style/Theme.AppCompat.NoActionBar" />
+        <activity android:name=".HistoryActivity" />
+        <activity android:name=".PrintActivity" />
+        <activity
+            android:name=".MachineMovementFormActivity"
+            android:theme="@style/Theme.AppCompat.NoActionBar" />
+        <activity
+            android:name=".PartMovementFormActivity"
+            android:theme="@style/Theme.AppCompat.NoActionBar" />
+        <activity
+            android:name=".BVFormActivity"
+            android:theme="@style/Theme.AppCompat.NoActionBar" />
+    </application>
+
+</manifest>

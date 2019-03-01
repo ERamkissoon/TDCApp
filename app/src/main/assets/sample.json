@@ -1,0 +1,23 @@
+[
+  {
+    "id": "50e26fb740f971173453be6ff9bd28b2",
+    "companyAssetNumber": "00000",
+    "created_at": 1538417659256,
+    "from": "7879f8245609f94b7297a8a295bbd580",
+    "locationFromName": "Location Sample 1",
+    "locationToName": "Location Sample 2",
+    "to": "0424f95051c28aab8cb184ce1b1dea1c",
+    "updated_at": 1538417800132
+  },
+  {
+    "id": "bbca6fc9fe4f88c912023a12538c0972",
+    "companyAssetNumber": "00001",
+    "created_at": 1538417659300,
+    "from": "9128df896f7b4fed88cc63d6d784ee6b",
+    "locationFromName": "Location Sample 3",
+    "locationToName": "Location Sample 2",
+    "to": "40f4c60eda29e0053c4e5da58ca8a569",
+    "updated_at": 1538417800144
+  }
+
+]

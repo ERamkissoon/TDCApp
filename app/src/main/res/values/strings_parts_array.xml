@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="parts">
+        <item>Micro Switch</item>
+        <item>Monitor Power Pack</item>
+        <item>Power Supply</item>
+        <item>Monitor</item>
+        <item>BV</item>
+        <item>Printer</item>
+    </string-array>
+</resources>

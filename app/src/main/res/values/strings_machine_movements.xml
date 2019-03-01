@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Machine Movement Activity Titles -->
+    <string name="screen_name">Machine Movements</string>
+    <string name="today">Movements Today</string>
+
+    <!-- Samples -->
+    <string name="sample_asset_number">GMA00000</string>
+    <string name="sample_location_name">Sample Location</string>
+</resources>

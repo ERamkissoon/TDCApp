@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android" >
+
+    <!-- Colored rectangle-->
+    <item>
+        <shape android:shape="rectangle">
+            <padding android:top="30dp"/>
+            <size android:width="200dp" android:height="40dp" />
+            <solid android:color="#00000000" />
+        </shape>
+    </item>
+    <!-- Darker colored line-->
+
+
+
+
+    <!-- This rectangle for the left side -->
+    <item
+        android:right="200dp"
+        android:left="-570dp"
+        android:top="-600dp"
+        android:bottom="-200dp">
+        <rotate android:fromDegrees="-45">
+            <shape android:shape="rectangle">
+                <padding android:top="-35dp"/>
+                <solid android:color="#FFFFFF" />
+            </shape>
+        </rotate>
+    </item>
+</layer-list>
